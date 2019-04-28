@@ -1,0 +1,33 @@
+HOW TO USE SYMPHONY
+
+INSTALLATION
+
+After create your folder on your computer
+exple: /Desktop/my_site
+
+
+1- open terminal
+2- NB: Place you to your folder with cd bfore installation
+
+   composer create-project symfony/website-skeleton my-project ****
+
+   (my-projet name is the folder wocontains all the symfony files)
+
+
+
+DATABASE CONFIGURATION
+open .env and edit:
+DATABASE_URL=mysql://db_user:db_password@127.0.0.1:3306/db_name ***
+
+db_user = database_username; exple: root, user, admin, steve
+db_password = database_password; exple: root, user, admin, steve
+db_name =  Database_namet
+
+
+RUN WEBSITE
+
+go to console
+ php bin/console server:start 0.0.0.0:8000
+
+
+ go to browser and paste http://127.0.0.1:8000 (it's generate by console)
